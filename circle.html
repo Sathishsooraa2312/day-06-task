@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <script>
+
+    class Circle{
+      constructor (radius, color){
+       this.radius = radius;
+       this.color = color;
+      }
+getRadius(){
+console.log( `Radius of circle is: ${this.radius}`)
+}
+setRadius(){
+
+}
+    getColor(){
+    console.log( `color of cicle is: ${this.color}`)
+}
+getArea(){
+    const pi = 3.14;
+console.log( `Area of circle is: ${pi* (this.radius*this.radius)}`)
+}
+getCircumference(){
+    const pi = 3.14;
+console.log( `circumference of circle is: ${2*pi*this.radius}`)
+}
+}
+let circle = new Circle (2.0, "black");
+
+circle.getRadius();
+circle.getColor();
+circle.getArea();
+circle.getCircumference();
+
+    </script>
+    </body>
+</html>

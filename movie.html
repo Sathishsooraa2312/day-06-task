@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //a
+        class movie{
+            constructor(title,studio,rating){
+                this.title = title;
+                this.studio =studio;
+                this.rating= rating;
+                }
+        }
+        let result = new movie('Vikram','Rajkamal','7.5/10');
+        console.log(result);
+
+        //b
+        class Movie{
+            constructor(title,studio,rating){
+                this.title = title;
+                this.studio =studio;
+                this.rating= rating;
+                
+                if (rating == null){
+                    return this.rating ="PG";
+
+                }
+                else{
+                    return this.rating = rating
+
+                }
+            }
+                }
+            
+        let result1 = new Movie('Vikram','Rajkamal');
+        console.log(result1);
+            // c
+        class movies{
+            constructor(title,studio,rating){
+                this.title = title;
+                this.studio =studio;
+                this.rating= rating;
+                
+
+            }
+                getPG(array){
+                    var res = array.filter((element)=> element.rating =="PG")
+                    return res
+                }
+            }
+
+
+            
+        let movie1= new movies('love today','Rajk',"PG");
+        let movie2= new movies('avatar 2','ags',"AG");
+        let movie3= new movies('ponniyan selvan','kamal',"PG");
+        let movie4= new movies('thunivu','Rajkamal',"pG");
+
+        const array =[movie1,movie2,movie3,movie4]
+        console.log(movie1. getPG(array));
+        
+//d
+class Movies{
+            constructor(title,studio,rating){
+                this.title = title;
+                this.studio =studio;
+                this.rating= rating;
+                }
+        }
+        let result2 = new Movies('Casino Royale','Eon Productions','PG13');
+        console.log(result2);
+
+
+
+
+
+
+    </script>
+</body>
+</html>
